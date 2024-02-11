@@ -5,21 +5,23 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Button from 'react-bootstrap/Button';
-
+import { Link } from 'react-router-dom';
 
 const NavbarComponent = () => {
   return (
     <Navbar expand="lg" className="navBg">
 
       <Container>
-        <Navbar.Brand href="#home"> <img src="../images/logo-tr.png" alt="letra" class="letraVtitle" /></Navbar.Brand>
+        <Link to="/"><Navbar.Brand> <img src="../images/logo-tr.png" alt="letra" className="letraVtitle" /></Navbar.Brand></Link>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
             <Nav.Link href="#home">Nosotros</Nav.Link>
             <Nav.Link href="#link">Nutrición</Nav.Link>
             <NavDropdown title="Productos" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.2"><Link to={"/products"} className='productsLink'>
+              Productos</Link>
+              </NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">
                 Another action
               </NavDropdown.Item>
