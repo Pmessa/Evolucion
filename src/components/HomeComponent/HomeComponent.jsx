@@ -9,11 +9,7 @@ const HomeComponent = () =>{
 
     return <div className="homeComponent">
         <CarrouselComponent />
-        <CardsComponent />
-        <FooterComponent />
-
-  
-    </div>
+            </div>
         
 
 

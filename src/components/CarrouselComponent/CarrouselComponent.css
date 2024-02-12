@@ -1,5 +1,11 @@
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
+
+
 .carrouselHome{
-    padding-top: 7rem;
+    padding-top: 3rem;
 }
 
 .carousel-caption{
@@ -9,16 +15,29 @@
 }
 
 .carouselTextContainer{
+    border-radius: 8px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     padding: 8px;
-    background-color: rgba(133, 113, 113, 0.7);
-    width:  fit-content;
+    background-color: rgba(255, 255, 255, 0.7);
+    max-width:  20rem;
+    font-size: 1.5rem;
+    font-family: 'Handlee', cursive;
 }
 h5{
     color: aliceblue;
     font-size: 2rem !important;
 
+}
+
+@media screen and (max-width:992px){
+    .carouselTextContainer{
+        display:none;
+    }
+    .carrouselHome{
+        padding-top: 6.3rem;
+    }
+    
 }

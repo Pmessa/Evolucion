@@ -8,32 +8,51 @@ function CarrouselComponent() {
             <Carousel.Item>
                 <img
                     className="d-block w-100"
-                    src="../images/carrousel/carrousel01.webp"
+                    src="https://firebasestorage.googleapis.com/v0/b/mis-nutrientes-vegan-eaf0d.appspot.com/o/carrousel%2Fcarrousel01.webp?alt=media&token=ecf817d8-574f-4bfa-a7aa-090d9737237a"
                     alt="First slide"
                 />
                 <Carousel.Caption>
                     <div className="carouselTextContainer">
-                        <h5>First slide label</h5>
-                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                        <Button variant="secondary">Más Info!</Button>{' '}
+                        <img src="images/logo-tr.png" alt="imagenLogo" />
+                        <p>La revolución de la salud y la belleza se forja en la cocina</p>
+                        <Button variant="secondary">Nuestros productos</Button>{' '}
                     </div>
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
                 <img
                     className="d-block w-100"
-                    src="../images/carrousel/carrousel02.webp"
-                    alt="Second slide"
+                    src="https://firebasestorage.googleapis.com/v0/b/mis-nutrientes-vegan-eaf0d.appspot.com/o/carrousel%2Fcarrousel03.jpg?alt=media&token=e591efb1-77d8-4db8-9d1e-c5e8596cea24"
+                    alt="Third slide"
                 />
                 <Carousel.Caption>
-                    <h5>Second slide label</h5>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <div className="carouselTextContainer">
+                        <h2>Untables increíbles</h2>
+                        <img src="images/logo-tr.png" alt="imagenLogo" />
+                        <p>Nuestros untables le darán un toque de distinción a tus picadas y snacks</p>
+                        <Button variant="secondary">Nuestros untables</Button>{' '}
+                    </div>
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
                 <img
                     className="d-block w-100"
-                    src="images/carrousel/carrousel05.png"
+                    src="https://firebasestorage.googleapis.com/v0/b/mis-nutrientes-vegan-eaf0d.appspot.com/o/carrousel%2Fhamburguesas-de-lentejas-carrousel.jpg?alt=media&token=165a0620-987e-4987-8b85-c10e478d94d4"
+                    alt="Second slide"
+                />
+                <Carousel.Caption>
+                <div className="carouselTextContainer">
+                        <h2>Medallones</h2>
+                        <img src="images/logo-tr.png" alt="imagenLogo" />
+                        <p>Que tus hamburguesas sean la estrella de la fiesta!</p>
+                        <Button variant="secondary">Nuestros medallones</Button>{' '}
+                    </div>
+                </Carousel.Caption>
+            </Carousel.Item>
+            <Carousel.Item>
+                <img
+                    className="d-block w-100"
+                    src="https://firebasestorage.googleapis.com/v0/b/mis-nutrientes-vegan-eaf0d.appspot.com/o/carrousel%2Fcarrousel05.png?alt=media&token=42433899-3b0d-4ba0-aed9-f6b1b90b90b7"
                     alt="Third slide"
                 />
                 <Carousel.Caption>

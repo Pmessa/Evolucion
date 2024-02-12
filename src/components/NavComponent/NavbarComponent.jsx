@@ -19,11 +19,12 @@ const NavbarComponent = () => {
             <Nav.Link href="#home">Nosotros</Nav.Link>
             <Nav.Link href="#link">Nutrición</Nav.Link>
             <NavDropdown title="Productos" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.2"><Link to={"/products"} className='productsLink'>
-              Productos</Link>
+              <NavDropdown.Item href="#action/3.1"><Link to={"/products/untables"} className='productsLink'>
+              Untables</Link>
               </NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">
-                Another action
+              <Link to={"/products/medallones"} className='productsLink'>
+              Medallones</Link>
               </NavDropdown.Item>
               <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
               <NavDropdown.Divider />
