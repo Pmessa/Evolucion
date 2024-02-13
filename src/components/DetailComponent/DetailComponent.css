@@ -52,6 +52,10 @@
     width: 50vw;
     border-radius: 2rem;
 }
+
+.detalleInfoProducto p{
+    font-size: 1.5rem;
+}
 /* 
 .detailContainerInner {
     flex-wrap: wrap;

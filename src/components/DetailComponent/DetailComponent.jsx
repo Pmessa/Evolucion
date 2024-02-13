@@ -19,7 +19,7 @@ const DetailComponent = ({ DetalleProducto }) => {
           <div className="imgHomeContainer">
             <img src={DetalleProducto.img01} alt="Imagen del producto" />
           </div>
-          <div className="itemCount">
+          {/* <div className="itemCount">
          
             {stock > 5 ? <strong>Producto Disponible</strong> : <strong>Ultimas unidades!</strong>}
             <button className="btn-success" onClick={() => setStock(stock - 1)}>Agregar al Carrito</button>
@@ -27,7 +27,7 @@ const DetailComponent = ({ DetalleProducto }) => {
             <div className="priceContainer">
             <p className='$'><span>$</span></p>{DetalleProducto.price}
             </div>
-          </div>
+          </div> */}
         </div>
         <div className="desctiptionContainer">
           <h2>{DetalleProducto.description}</h2>
@@ -36,7 +36,7 @@ const DetailComponent = ({ DetalleProducto }) => {
       
         <div className="detalleInfoProducto">
            <h3 className="detalleInfoTitle">Porqué aprovechar {DetalleProducto.title}</h3>
-           <p>{DetalleProducto.detail}</p>
+           <p>{DetalleProducto.nutricion}</p>
         </div>
     </div>
   )
