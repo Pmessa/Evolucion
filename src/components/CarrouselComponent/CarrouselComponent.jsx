@@ -1,5 +1,6 @@
 import Carousel from 'react-bootstrap/Carousel';
 import Button from 'react-bootstrap/Button';
+import { Link } from 'react-router-dom';
 import "./CarrouselComponent.css"
 
 function CarrouselComponent() {
@@ -15,7 +16,7 @@ function CarrouselComponent() {
                     <div className="carouselTextContainer">
                         <img src="images/logo-tr.png" alt="imagenLogo" />
                         <p>La revolución de la salud y la belleza se forja en la cocina</p>
-                        <Button variant="secondary">Nuestros productos</Button>{' '}
+                        <Button variant="secondary"><Link to="/products" className='productsLink'>Nuestros productos</Link></Button>{' '}
                     </div>
                 </Carousel.Caption>
             </Carousel.Item>
@@ -30,7 +31,8 @@ function CarrouselComponent() {
                         <h2>Untables increíbles</h2>
                         <img src="images/logo-tr.png" alt="imagenLogo" />
                         <p>Nuestros untables le darán un toque de distinción a tus picadas y snacks</p>
-                        <Button variant="secondary">Nuestros untables</Button>{' '}
+                        
+                        <Button variant="secondary"><Link to="/category/untables" className='productsLink'>Nuestros Untables</Link></Button>{' '}
                     </div>
                 </Carousel.Caption>
             </Carousel.Item>
@@ -45,7 +47,7 @@ function CarrouselComponent() {
                         <h2>Medallones</h2>
                         <img src="images/logo-tr.png" alt="imagenLogo" />
                         <p>Que tus hamburguesas sean la estrella de la fiesta!</p>
-                        <Button variant="secondary">Nuestros medallones</Button>{' '}
+                        <Button variant="secondary"><Link to={"/category/medallones"} className='productsLink'>Nuestros Medallones</Link></Button>{' '}
                     </div>
                 </Carousel.Caption>
             </Carousel.Item>

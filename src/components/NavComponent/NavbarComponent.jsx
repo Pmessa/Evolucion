@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import React from 'react'
 import "./NavbarComponent.css"
 import Container from 'react-bootstrap/Container';
@@ -5,7 +6,6 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Button from 'react-bootstrap/Button';
-import { Link } from 'react-router-dom';
 
 const NavbarComponent = () => {
   return (
@@ -19,12 +19,9 @@ const NavbarComponent = () => {
             <Nav.Link href="#home">Nosotros</Nav.Link>
             <Nav.Link href="#link">Nutrición</Nav.Link>
             <NavDropdown title="Productos" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1"><Link to={"/products/untables"} className='productsLink'>
-              Untables</Link>
+              <NavDropdown.Item><Link to={"/category/untables"} className='productsLink'>Untables</Link>
               </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
-              <Link to={"/products/medallones"} className='productsLink'>
-              Medallones</Link>
+              <NavDropdown.Item><Link to={"/category/medallones"} className='productsLink'>Medallones</Link>
               </NavDropdown.Item>
               <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
               <NavDropdown.Divider />
