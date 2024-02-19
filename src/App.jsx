@@ -1,3 +1,5 @@
+import { CartProvider } from './context/CartContext';
+
 import MainRouter from './routes/MainRouter';
 import MainLayout from './layout/MainLayout'
 import './App.css'
@@ -7,9 +9,11 @@ function App() {
 
 
   return (
-    <MainLayout>
-      <MainRouter />
-    </MainLayout>
+    <CartProvider>
+      <MainLayout>
+        <MainRouter />
+      </MainLayout>
+    </CartProvider>
   )
 }
 

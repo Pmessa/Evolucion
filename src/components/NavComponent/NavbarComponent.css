@@ -2,7 +2,7 @@
 
 :root{
   --clr-gray:rgb(206, 204, 204);
-  --clr-strong-gray:rgb(154, 153, 159);
+  --clr-strong-gray:rgb(74, 73, 73);
   --clr-green:rgb(176, 255, 176);
   --clr-white:rgb(250,250,250);
   --clr-black: rgb(28, 28, 28);
@@ -47,13 +47,44 @@ Button img:hover{
 
 .productsLink{
   text-decoration: none;
-  color:var(--clr-black);
+  color:var( --clr-black) !important;
   padding-right: 1rem;
 }
-/* @media screen and (max-width:992px){
-  .buttonContainer{
+
+
+.cart-widget {
+  padding-inline:1rem;
+  display: flex;
+  flex-direction: row;
+
+}
+
+.cart-widget img {
+  width: 4rem;
+}
+.cartWidgetLink {
+  display: flex;
+}
+
+.cartNumber {
+ 
+  background: var(--clr-strong-gray);
+  color:var(--clr-white);
+  font-size: 1.5rem;
+  width: 2.5rem;
+  border-radius: 100vmax;
+  align-self: center;
+  padding-inline: .7rem;
+}
+@media screen and (max-width:992px){
+  .cart-widget{
     display: none;
   }
-} */
+}
+@media screen and (min-width:992px){
+  .nav-carrito{
+    display: none;
+  }
+}
 
 

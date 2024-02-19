@@ -6,6 +6,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Button from 'react-bootstrap/Button';
+import CartWidget from '../CartWidget/CartWidget';
 
 const NavbarComponent = () => {
   return (
@@ -16,8 +17,9 @@ const NavbarComponent = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="#home">Nosotros</Nav.Link>
-            <Nav.Link href="#link">Nutrición</Nav.Link>
+            <Nav.Link href="#home" className='productsLink'>Nosotros</Nav.Link>
+            <Nav.Link href="#link"className='productsLink'>Nutrición</Nav.Link>
+            <Nav.Link className='productsLink'><Link to="/item/itemId" className=' productsLink nav-carrito'>Carrito</Link></Nav.Link>
             <NavDropdown title="Productos" id="basic-nav-dropdown">
               <NavDropdown.Item><Link to={"/category/untables"} className='productsLink'>Untables</Link>
               </NavDropdown.Item>
@@ -30,6 +32,7 @@ const NavbarComponent = () => {
               </NavDropdown.Item>
             </NavDropdown>
           </Nav>
+        <CartWidget/>
         </Navbar.Collapse>
         {/* <div className="buttonContainer">
           <Button variant='' size="sm"><img src="../images/instagram_f_icon-icons.com_65485.png" alt="" /></Button>{' '}

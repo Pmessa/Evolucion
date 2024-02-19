@@ -1,12 +1,13 @@
 import React from 'react';
-import './DetailComponent.css'
-
-
+import './DetailComponent.css'  
+import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 const DetailComponent = ({ DetalleProducto }) => {
 
-  const [stock, setStock] = React.useState(10)
-  console.log(stock)
+  const Navigate = useNavigate()
+  // const [stock, setStock] = React.useState(10)
+  // console.log(stock)
 
 
   return (
@@ -19,15 +20,6 @@ const DetailComponent = ({ DetalleProducto }) => {
           <div className="imgHomeContainer">
             <img src={DetalleProducto.img01} alt="Imagen del producto" />
           </div>
-          {/* <div className="itemCount">
-         
-            {stock > 5 ? <strong>Producto Disponible</strong> : <strong>Ultimas unidades!</strong>}
-            <button className="btn-success" onClick={() => setStock(stock - 1)}>Agregar al Carrito</button>
-
-            <div className="priceContainer">
-            <p className='$'><span>$</span></p>{DetalleProducto.price}
-            </div>
-          </div> */}
         </div>
         <div className="desctiptionContainer">
           <h2>{DetalleProducto.description}</h2>
@@ -38,6 +30,10 @@ const DetailComponent = ({ DetalleProducto }) => {
            <h3 className="detalleInfoTitle">Porqué aprovechar {DetalleProducto.title}</h3>
            <p>{DetalleProducto.nutricion}</p>
         </div>
+        <Link to="/cart/itemId"><button className="btn-success">Comprar ebook de {DetalleProducto.category}</button></Link>
+        <div className='buttonContainer'>
+                <button onClick={() => Navigate(`/item/${item.id}`)} className='buttonVerDetalle'>Ver Detalle</button>
+              </div>
     </div>
   )
 }
