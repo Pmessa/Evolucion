@@ -9,7 +9,7 @@ const HomeComponent = () => {
         <div>
         <CarrouselComponent />
         </div>
-        <div>
+        <div className='homeTextContainer'>
         <HomeTextComponent />
         </div>
     </div>
