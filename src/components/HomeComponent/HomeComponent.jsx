@@ -1,6 +1,7 @@
 import React from 'react'
 import HomeTextComponent from '../HomeTextComponent/HomeTextComponent'
 import CarrouselComponent from '../CarrouselComponent/CarrouselComponent'
+import "./HomeComponent.css"
 
 const HomeComponent = () => {
   return (
@@ -11,8 +12,6 @@ const HomeComponent = () => {
         <div>
         <HomeTextComponent />
         </div>
-        </div>
-  )
-}
-
+    </div>
+  )}
 export default HomeComponent
