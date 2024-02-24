@@ -1,17 +1,18 @@
 import React from 'react'
-import "./HomeComponent.css"
+import HomeTextComponent from '../HomeTextComponent/HomeTextComponent'
 import CarrouselComponent from '../CarrouselComponent/CarrouselComponent'
-import FooterComponent from '../FooterComponent/FooterComponent'
-import CardsComponent from '../CardsComponent/CardsComponent'
 
-const HomeComponent = () =>{
-
-
-    return <div className="homeComponent">
+const HomeComponent = () => {
+  return (
+    <div>
+        <div>
         <CarrouselComponent />
-            </div>
-        
-
-
+        </div>
+        <div>
+        <HomeTextComponent />
+        </div>
+        </div>
+  )
 }
+
 export default HomeComponent

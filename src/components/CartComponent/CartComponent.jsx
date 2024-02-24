@@ -1,15 +1,16 @@
 import React from 'react'
 import { ListGroup } from 'react-bootstrap'
+import "./CartComponent.css"
 
 
 const CartComponent = ({ CartProduct }) => {
 
-    console.log("CartProduct.title")
+    console.log(CartProduct)
     return (
         <div>
             <div className='CartComponent' key={CartProduct.id}>
 
-                <h1>{CartProduct.title}</h1>
+                <h1>{CartProduct.title}Carrito Título</h1>
 
                 <div className='CardContainer'>
                     <div className='ImgContainer'>

@@ -51,7 +51,7 @@ function CarrouselComponent() {
                     </div>
                 </Carousel.Caption>
             </Carousel.Item>
-            <Carousel.Item>
+            {/* <Carousel.Item>
                 <img
                     className="d-block w-100"
                     src="https://firebasestorage.googleapis.com/v0/b/mis-nutrientes-vegan-eaf0d.appspot.com/o/carrousel%2Fcarrousel05.png?alt=media&token=42433899-3b0d-4ba0-aed9-f6b1b90b90b7"
@@ -63,7 +63,7 @@ function CarrouselComponent() {
                         Praesent commodo cursus magna, vel scelerisque nisl consectetur.
                     </p>
                 </Carousel.Caption>
-            </Carousel.Item>
+            </Carousel.Item> */}
         </Carousel>
     );
 }

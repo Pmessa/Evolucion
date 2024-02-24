@@ -9,8 +9,6 @@ import FooterComponent from "../components/FooterComponent/FooterComponent";
 import Cart from "../pages/Cart";
 
 
-
-
 const MainRouter = () => {
     return (
         <Router>
