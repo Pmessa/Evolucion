@@ -7,6 +7,7 @@ import Category from "../pages/Category";
 import Details from "../pages/Details";
 import FooterComponent from "../components/FooterComponent/FooterComponent";
 import Cart from "../pages/Cart";
+import Ebook from "../pages/Ebook";
 
 
 const MainRouter = () => {
@@ -19,6 +20,7 @@ const MainRouter = () => {
                 <Route path="/category/:categoryId" element={<Category />} />
                 <Route path="/item/:itemId" element={<Details />} />
                 <Route path="/cart/:itemId" element={<Cart />} />
+                <Route path="/ebook/:ebook" element={<Ebook />} />
             </Routes>
             <FooterComponent />
 

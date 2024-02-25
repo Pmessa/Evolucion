@@ -1,7 +1,8 @@
 import React from 'react'
 import { ListGroup } from 'react-bootstrap'
+import { Link } from 'react-router-dom'
 import "./CartComponent.css"
-
+import "../ItemCount/ItemCount"
 
 const CartComponent = ({ CartProduct }) => {
 
@@ -23,6 +24,7 @@ const CartComponent = ({ CartProduct }) => {
                         <ListGroup.Item>Porta ac consectetur ac</ListGroup.Item>
                     </ListGroup>
                 </div>
+                <Link to={`${CartProduct.ebook}`}><button>leer ebook</button></Link>
                 {/* <ItemCount />
                 {stock > 5 ? <strong>Producto Disponible</strong> : <strong>Ultimas unidades!</strong>}
                 <button className="btn-success btn" onClick={() => setStock(stock - 1)}>Comprar</button> */}
