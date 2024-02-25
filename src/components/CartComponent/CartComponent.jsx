@@ -14,7 +14,7 @@ const CartComponent = ({ CartProduct }) => {
 
                 <div className='CardContainer'>
                     <div className='ImgContainer'>
-                        <img src={CartProduct.img} alt="Imagen del producto en el carrito" />
+                        <img src={CartProduct.img01} alt="Imagen del producto en el carrito" />
                     </div>
                     <ListGroup>
                         <ListGroup.Item><h2>{CartProduct.description}</h2></ListGroup.Item>

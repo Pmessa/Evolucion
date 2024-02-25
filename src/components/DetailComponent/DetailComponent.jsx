@@ -30,10 +30,10 @@ const DetailComponent = ({ DetalleProducto }) => {
            <h3 className="detalleInfoTitle">Porqué aprovechar {DetalleProducto.title}</h3>
            <p>{DetalleProducto.nutricion}</p>
         </div>
-        <Link to="/cart/itemId"><button className="btn-success">Comprar ebook de {DetalleProducto.category}</button></Link>
-        <div className='buttonContainer'>
+        <Link to={`/cart/${DetalleProducto.id}`}><button className="btn-success">Comprar ebook de {DetalleProducto.category}</button></Link>
+        {/* <div className='buttonContainer'>
                 <button onClick={() => Navigate(`/item/${item.id}`)} className='buttonVerDetalle'>Ver Detalle</button>
-              </div>
+              </div> */}
     </div>
   )
 }
